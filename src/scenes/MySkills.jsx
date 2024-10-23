@@ -1,7 +1,16 @@
 import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
-
+import { FaHtml5 } from "react-icons/fa6";
+import { FaCss3 } from "react-icons/fa6";
+import { TbBrandJavascript } from "react-icons/tb";
+import { FaReact } from "react-icons/fa";
+import { FaBootstrap } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { RiNextjsFill } from "react-icons/ri";
+import { IoLogoFirebase } from "react-icons/io5";
+import { TbJson } from "react-icons/tb";
+import { FaFigma } from "react-icons/fa";
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
@@ -23,9 +32,19 @@ const MySkills = () => {
             MY <span className="text-red">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
-          <p className="mt-10 mb-7">
-           Html,CSS,Javascript,Bootstrap,CSS Tailwind,Saas,React,Redux-Toolkit,motion,json-server,firebase,Git,Github
-          </p>
+       <div className="flex flex-col mt-5">
+<div className="flex items-center my-8"><FaHtml5 className="text-teal-400 text-5xl mr-2"/>
+<FaCss3 className="text-teal-400 text-5xl mr-2"/>
+<TbBrandJavascript className="text-teal-400 text-5xl mr-2"/>
+<FaReact className="text-teal-400 text-5xl mr-2"/>
+<FaBootstrap className="text-teal-400 text-5xl mr-2"/>
+<RiTailwindCssFill className="text-teal-400 text-5xl mr-2"/>
+</div>
+<div className="flex items-center "><RiNextjsFill className="text-teal-400 text-5xl mr-2"/>
+<IoLogoFirebase className="text-teal-400 text-5xl mr-2"/>
+<TbJson className="text-teal-400 text-5xl mr-2"/>
+<FaFigma className="text-teal-400 text-5xl mr-2"/></div>
+       </div>
         </motion.div>
 
         <div className="mt-16 md:mt-0">
